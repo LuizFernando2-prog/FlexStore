@@ -1,0 +1,97 @@
+html {
+    position: relative;
+    min-height: 100%;
+  }
+
+/* Estilos para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Cor de fundo cinza claro */
+    margin-bottom: 60px;
+    padding-bottom: 100px
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #343a40; /* Cor de fundo cinza escuro */
+    color: #ffffff; /* Cor do texto branco */
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilos para os links */
+a {
+    color: #007bff; /* Cor azul para os links */
+    text-decoration: none; /* Remover sublinhado padrão */
+}
+
+a:hover {
+    text-decoration: underline; /* Adicionar sublinhado ao passar o mouse sobre o link */
+}
+
+/* Estilos para os botões */
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #007bff; /* Cor de fundo azul */
+    color: #ffffff; /* Cor do texto branco */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Cor de fundo azul mais escura ao passar o mouse */
+}
+
+/* Estilos para os formulários */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ced4da; /* Cor da borda cinza */
+    border-radius: 4px;
+}
+
+/* Estilos para as tabelas */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table ,
+.table  {
+    padding: 8px;
+    border-bottom: 1px solid #dee2e6; /* Cor da borda cinza */
+    text-align: left;
+}
+
+.table th {
+    background-color: #f8f9fa; /* Cor de fundo cinza claro para o cabeçalho da tabela */
+}
+
+.footer {
+    position: relative;
+    border-top: 1px solid #333 ;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa; /* Cor de fundo do footer */
+    text-align: center; /* Alinhamento do texto no centro */
+    padding: 10px 10; /* Espaçamento interno */
+  }
+  
