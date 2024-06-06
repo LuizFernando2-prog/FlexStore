@@ -1,4 +1,5 @@
 ## FlexStore
+![Captura de tela 2024-06-06 041511](https://github.com/LuizFernando2-prog/FlexStore/assets/69861259/6491d840-db91-4daa-baca-c5a97735028f)
 
 ### Tecnologias Utilizadas:
 - **PHP:** Utilizado para a lógica de back-end e interação com o banco de dados.
