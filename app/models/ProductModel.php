@@ -26,19 +26,21 @@ class ProductModel
         return $stmt->get_result()->fetch_assoc();
     }
 
-    public function create($data)
+    public function create($name, $description, $category_id, $subcategory_id, $image)
     {
+    
         $query = "INSERT INTO products (name, description, category_id, subcategory_id, image) VALUES (?, ?, ?, ?, ?)";
         $stmt = $this->db->prepare($query);
-        $stmt->bind_param("ssibs", $data['name'], $data['description'], $data['category_id'], $data['subcategory_id'], $data['image']);
+        $stmt->bind_param("ssiss", $name, $description, $category_id, $subcategory_id, $image);
         $stmt->execute();
     }
+    
 
-    public function update($id, $data)
+    public function update($id, $name, $description, $category_id, $subcategory_id, $image)
     {
         $query = "UPDATE products SET name = ?, description = ?, category_id = ?, subcategory_id = ?, image = ? WHERE id = ?";
         $stmt = $this->db->prepare($query);
-        $stmt->bind_param("ssibsi", $data['name'], $data['description'], $data['category_id'], $data['subcategory_id'], $data['image'], $id);
+        $stmt->bind_param("ssibsi", $name, $description, $category_id, $subcategory_id, $image, $id);
         $stmt->execute();
     }
 

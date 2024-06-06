@@ -20,6 +20,7 @@ class SubcategoryModel
         $stmt = $this->db->prepare($query);
         $stmt->bind_param("si", $name, $categoryId);
         $stmt->execute();
+        return $stmt->insert_id;
     }
 }
 ?>

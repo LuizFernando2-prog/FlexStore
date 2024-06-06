@@ -20,6 +20,8 @@ class CategoryModel
         $stmt = $this->db->prepare($query);
         $stmt->bind_param("s", $name);
         $stmt->execute();
+        return $stmt->insert_id;
     }
+    
 }
 ?>
